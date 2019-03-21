@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
   for (int j = 0; j < 100; j++) {
     imu.getTemperature(&imu_temp_);
     log.INFO("TEST-Imu", "Temperature %d degrees Celcius", imu_temp_);
-    Thread::sleep(30);
+    Thread::sleep(100);
   }
  	return 0;
 }
