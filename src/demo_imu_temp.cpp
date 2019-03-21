@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
   int imu_temp_;
   Thread::sleep(200);
   log.INFO("TEST-Imu", "Imu instance successfully created");
-  for (int j = 0; j < 20; j++) {
+  for (int j = 0; j < 100; j++) {
     imu.getTemperature(&imu_temp_);
     log.INFO("TEST-Imu", "Temperature %d degrees Celcius", imu_temp_);
     Thread::sleep(30);
